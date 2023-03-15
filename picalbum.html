@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Responsive Photo Album</title>
+    <style>
+     
+      * {
+        background-image: url('picalb2.jpg');
+        margin: 200;
+        padding: 100;
+        box-sizing: border-box;
+      }
+      .album {
+        background-image: url('picalb1.jpg');
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 100px;
+        
+      }
+      .album h1 {
+        color:white;
+        text-decoration-style: dotted;
+        text-decoration: dashed;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .album h3{
+        color:white;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+      }
+      
+      
+      .photo {
+        position: relative;
+        display: block;
+        height: 0;
+        padding-left:75% ;
+        padding-bottom: 75%;
+        background-size: cover;
+        background-position:top;
+      }
+      
+    
+      .photo-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+      }
+      
+    
+      .photo:hover .photo-caption {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="album">
+      <h1>My Photo Album</h1>
+      <h3>SREEPRIYA S - AM.EN.U4AIE20166</h3>
+      <div class="photo-grid">
+        <div class="photo" style="background-image: url('https://animalcorner.org/wp-content/uploads/2020/06/Husky-Dog-2.jpg')">
+          <div class="photo-caption">HUSKY</div>
+        </div>
+        <div class="photo" style="background-image: url('https://th.bing.com/th/id/R.32eb419833f25bc24732c8da29261f5b?rik=igG7yx16LTorkQ&riu=http%3a%2f%2fwww.eatsleepwalk.com%2fwp-content%2fuploads%2fEnglish-Bulldog-Puppy-Training-and-Breed-Information-1.jpg&ehk=JExEcq3nQSGvFxwNhWuK1W5JmEE6OeZRfiAXSsyq0C4%3d&risl=&pid=ImgRaw&r=0')">
+          <div class="photo-caption">BULL DOG</div>
+        </div>
+        <div class="photo" style="background-image: url('https://th.bing.com/th/id/R.9ef8cb37ff325e3cf8e0e2c08ba93583?rik=VCMV3sKZ6J%2bIqA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-AI2fhTCbWQ4%2fT26wCp9yk3I%2fAAAAAAAACTI%2f6O88_7A0txo%2fs1600%2fgolden-retriever-picture.jpg&ehk=o5AIwvcpHapUYotcpJR%2b5GFgvSl0QK6k3%2fOI2sE7OwM%3d&risl=&pid=ImgRaw&r=0')">
+          <div class="photo-caption">GOLDEN RETRIEVER</div>
+        </div>
+        <div class="photo" style="background-image: url('https://th.bing.com/th/id/R.f80579dfb5ee49324d9e562bd97a5654?rik=Z31Ux83lsOYGZA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-SQy-vn0U53U%2fUZV8FlLe0zI%2fAAAAAAAAE-M%2f-2_iLG54exA%2fs1600%2fGerman%2bShepherd.jpg&ehk=tiXFZqia1aB4JrSWr32BXFpwnHFfwRTG02ASozIx1h0%3d&risl=&pid=ImgRaw&r=0')">
+          <div class="photo-caption">GERMAN SHEPHERD</div>
+        </div>
+        <div class="photo" style="background-image: url('https://th.bing.com/th/id/OIP.kxbgK8GX9iChrLEtFZuqZgHaGk?pid=ImgDet&rs=1')">
+          <div class="photo-caption">COLLIE</div>
+        </div>
+        <div class="photo" style="background-image: url('https://th.bing.com/th/id/OIP.gL6HKu408o9C0dAndTSINgHaHa?pid=ImgDet&w=474&h=474&rs=1')">
+          <div class="photo-caption">PUG</div>
+        </div>
+        <div class="photo" style="background-image: url('https://th.bing.com/th/id/R.ff565c69bd7c69b6edd8020917d9b3ae?rik=7XwFr2J5J8q5AQ&riu=http%3a%2f%2fwww.pets4homes.co.uk%2fimages%2fbreeds%2f46%2flarge%2fa10cee17736ced3da92fec8e7f8fc4a8.jpg&ehk=CqhWVsUhy4L2C6yTwHaQAdmKxZnK9X7y8eGk0Fg%2bDaA%3d&risl=&pid=ImgRaw&r=0')">
+            <div class="photo-caption">DALMATIAN</div>
+          </div>
+          <div class="photo" style="background-image: url('https://wagbrag.com/wp-content/uploads/2012/11/beagle.jpg')">
+            <div class="photo-caption">BEAGLE</div>
+          </div>
+          <div class="photo" style="background-image: url('https://th.bing.com/th/id/OIP.qmRNfuBpjU-kgKSmlIQbtwHaF7?pid=ImgDet&rs=1')">
+            <div class="photo-caption">DOBERMAN</div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
